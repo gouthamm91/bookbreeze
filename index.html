@@ -15,7 +15,7 @@
         }
 
         .inp, .btn {
-            width: 70%;
+            width: 60%;
             padding: 10px;
             border: 1px solid gray;
             border-radius: 15px;
@@ -30,7 +30,7 @@
             width: auto;
             background-color: orange;
             color: white;
-            margin-left: 15px;
+            margin-left: 5px;
             cursor: pointer;
         }
 
@@ -86,7 +86,8 @@
 
         <div style="position: relative;">
             <input id="booktitle" class="inp" placeholder="Search book name...">
-        <input type="button" class="btn" value="Read" onclick="window.open('https://www.google.com/search?q=' + booktitle.value.split(' ').join('+') + '+book+pdf&btnI')"/>
+        <input type="button" class="btn" value="🔎" onclick="window.open('https://www.google.com/search?q=' + booktitle.value.split(' ').join('+') + '+book+pdf&btnI')"/>
+        <input type="button" class="btn" value="❌" onclick="booktitle.value = '';" style="color: rgba(50, 200, 225, 1);"/>
             <div id="dropdown" class="dropdown"></div>
         </div>
     </div>
